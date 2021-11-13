@@ -5,11 +5,14 @@ Download AdventureWorks Database for MySQL
 
 https://sourceforge.net/projects/awmysql/
 
+Download AdventureWorks Database for Microsoft SQL Server 
+
+https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15&tabs=ssms
 
 
 INSTRUCTIONS:
 
-You are given a backup of AdventureWorks sample database. You can choose to work on the MySQL or SQL Server versions. Study the database and relationships. 
+Download AdventureWorks sample database. You can choose to work on the MySQL or SQL Server versions. Study the database and relationships. 
 
 IMPORTANT:
 
