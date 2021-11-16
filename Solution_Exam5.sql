@@ -4,11 +4,12 @@
 **/
 SELECT 
   salesterritory.name TerritoryName,
-  SUM(TotalDue) TotalSales
+ 
+  salesorderheader.ModifiedDate
 FROM
   salesorderheader 
   LEFT JOIN `salesterritory` USING (TerritoryID) 
-WHERE DATE(salesorderheader.ModifiedDate) >= DATE("2001-07-14 00:00:00") + INTERVAL - 7 DAY 
-  AND DATE(salesorderheader.ModifiedDate) < DATE("2001-07-14 00:00:00") + INTERVAL 0 DAY 
-GROUP BY TerritoryID 
-ORDER BY TerritoryName 
+WHERE DATE(salesorderheader.ModifiedDate) >= DATE("2001-07-14 00:00:00") 
+  AND DATE(salesorderheader.ModifiedDate) < DATE("2001-07-14 00:00:00") + INTERVAL 7 DAY 
+ 
+ORDER BY salesorderheader.ModifiedDate 
